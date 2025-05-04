@@ -1,94 +1,146 @@
-SOFTWARE ENGINEERING : DAY 2 ASSIGNMENT 
-1(a) Version control is a system that tracks changes to files over time, allowing users to revert to previous versions,merge changes from different developers,and collaborate effectively.
-(b) GitHub is a popular tool for managing versions of code because it prevents them from duplicating work. Also, they can easily use GitHub to revert to initial versions of their code if new changes are not useful.
-(c) Version control helps to maintain project integrity by making it possible for data scientists to quickly correct errors in versions of code. Also, it does
-this by preventing unauthorized users from making changes.
 
-2(a) To create a new repository on GitHub, the ' git init' command is used e.g.
-(I) in the upper right hand corner of any page, select,then click new repository 
-(ii) type a short memorable name for your repository 
-(b) Some of the important decisions to be made while creating a new repository are:
-(I) defining its purpose, scope and organizational structure.
-(ii) Setting up necessary tools and resources.
+Skip to content
+Open sidebar
 
-3(a) A README file in a repository helps to communicate important information about the scientist's project e.g. a repository licence, citation file, contribution guidelines, and a code of conduct.
-(b) What should be included in a well-written README file are:
-(i) Project Title
-(ii) Project Description 
-(III) Table of Contents
-(iv) Technologies used
-(v) Requirements 
-(vi) Installation instructions 
-(vii) Usage instructions 
-(vii) Documentation.
-(c) A well-written README file ensures effective collaboration by accurately passing information to all partakers in the project,with regards to the purpose and context of the project, onboarding resources and contribution guidelines.
+ChatGPT
+You said:
+Task 1: Load and Explore the Dataset
+Choose a dataset in CSV format (for example, you can use datasets like the Iris dataset, a sales dataset, or any dataset of your choice).
+Load the dataset using pandas.
+Display the first few rows of the dataset using .head() to inspect the data.
+Explore the structure of the dataset by checking the data types and any missing values.
+Clean the dataset by either filling or dropping any missing values.
+Task 2: Basic Data Analysis
+Compute the basic statistics of the numerical columns (e.g., mean, median, standard deviation) using .describe().
+Perform groupings on a categorical column (for example, species, region, or department) and compute the mean of a numerical column for each group.
+Identify any patterns or interesting findings from your analysis.
+Task 3: Data Visualization
+Create at least four different types of visualizations:
+Line chart showing trends over time (for example, a time-series of sales data).
+Bar chart showing the comparison of a numerical value across categories (e.g., average petal length per species).
+Histogram of a numerical column to understand its distribution.
+Scatter plot to visualize the relationship between two numerical columns (e.g., sepal length vs. petal length).
+Customize your plots with titles, labels for axes, and legends where necessary.
 
-4(a) Public repositories are accessible to everyone on the internet and so are not secure.Private repositories are accessible to the scientist and to other authorized users,and so is more secure than a public ones.
-(b) Public repositories are more useful for collaboration in executing a project than private ones. However, private ones are better at protecting intellectual property.
 
-5(a) Steps involved in making one's first commit to a GitHub repository are:
-(i) create a sample project 
-(ii) clone the repository 
-(III) create a branch and make your changes
-(iv) commit and push your changes 
-(v) merge your changes 
-(vi) view your changes in GitHub.
-(b) Commits ensure that all changes are centrally gathered in a central repository and that the entire team is informed about the changes.Also, they are used to track different versions of the software and to give updates on it.
 
-6(a) In Git, branching allows developers to create separate lines of development, enabling them to work on new features or bug fixes without directly affecting the main codebase.
-(b) Branching is an important feature for collaborative development because it allows the scientist to develop features of his software, fix bugs, or safely experiment with new ideas in a contained area of his repository.
-(c) The process of creating,using  and merging branches in a typical workflow are:
-(i) create the repository 
-(ii) create a new branch ,like a separate branch for each feature or issue that one works on
-(III) update, add,commit,and push changes
-(iv) resolve feedback 
-(v) merge your pull request 
+Additional Instructions
 
-7(a) The role of pull request in a GitHub workflow is to provide a structured way to review and merge code changes
-(b) Pull requests facilitate code review and collaboration by providing a structured way for developers to propose, discuss,and integrate changes to a codebase
-(c) Creating and managing a pull request involves the following key steps:
-(i) preparing changes locally 
-(ii) pushing them to a remote repository 
-(iii) initiating the pull request
-(iv) reviewing and discussing the changes
-(v) addressing feedback 
-(vi) merging the changes.
+Dataset Suggestions:
 
-8(a) The concept of 'forking' on a repository on a GitHub means opening up the repository to contributions from any developer without having to manually manage authorization settings to each contributor.
-(b) Forking is for remote , independent  development and collaboration whereas cloning is meant for local work  and synchronization with a remote repository.
-(c) An example of a scenario where forking is particular useful is: when multiple developers intend to collaborate on a project or when a developer wants to contribute changes to an existing project.
+You can use publicly available datasets from sites like Kaggle or UCI Machine Learning Repository.
+The Iris dataset (a classic dataset for classification problems) can be accessed via sklearn.datasets.load_iris(), which can be used for the analysis.
 
-9(a) Importance of issues and project boards on GitHub is that they work together to achieve the following:
-(i) project planning and project implementation 
-(ii) enhance team collaboration 
-(iii) increase transparency
-(iv) boost productivity 
-(b) Issues and project boards can be used to track bugs, manage tasks and improve proper organization in the following ways:
-(i) by acting as a central hub for tracking work e.g. bug reports, feature requests, and task assignments
-(ii) by organizing issues using labels, milestones, and task lists to categorize and prioritize work
-(c) Issues and project boards enhance collaborative effort by providing a centralized, transparent platform for tracking tasks,progress , and issues, fostering open communication and shared understanding among team members.
+Plot Customization:
 
-10(a) Common challenges in using  GitHub for version control include:
-(i) merge conflicts 
-(ii) understanding branching strategies 
-(iii) maintaining a clean commit history 
-Best practices include:
-(i) frequent, meaningful commits
-(ii)clear commit messages 
-(iii effective branching 
-(iv) proactive conflict resolution 
-(b) Common pitfalls that new users of GitHub might encounter are:
-(i) understanding and using git effectively 
-(ii) committing too early 
-(iii) ignoring 'gitignore'
-(iv) using incorrect branching strategies 
-(v) forgetting to write descriptive commit changes
-(vi) failing to understand pull request workflows 
-(vi) neglecting code reviews 
-(viii) securing issues e.g. storing sensitive information in repositories and large binary files
-(c) Strategies for overcoming common pitfalls of new users of GitHub and to ensure smooth collaboration are:
-(i) clear and concise documentation
-(ii) use of interactive tutorials
-(iii) community engagement 
-(iv) best practices for collaboration 
-(v) focusing on small, incremental steps.
+Customize the plots using the matplotlib library to add titles, axis labels, and legends.
+Use seaborn for additional plotting styles, which can make your charts more visually appealing.
+
+Error Handling:
+
+Handle possible errors during the file reading (e.g., file not found), missing data, or incorrect data types by using exception-handling mechanisms (try, except).
+
+Submission:
+
+Ensure your submission is complete with all necessary code and explanations. Make sure that each plot is properly labeled and provides insights into the dataset.
+ChatGPT said:
+Great! Here's a complete walkthrough of your tasks using the Iris dataset as an example, with Python code and explanations. This can be run in a Jupyter notebook or any Python environment with pandas, matplotlib, seaborn, and sklearn installed.
+
+Task 1: Load and Explore the Dataset
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+
+# Load dataset
+try:
+    iris = load_iris()
+    df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+    df['species'] = iris.target
+    df['species'] = df['species'].map(dict(enumerate(iris.target_names)))
+except Exception as e:
+    print("Error loading dataset:", e)
+
+# Display first few rows
+print(df.head())
+
+# Check data types and missing values
+print("\nData Types:\n", df.dtypes)
+print("\nMissing Values:\n", df.isnull().sum())
+
+# Clean dataset (if any missing values)
+df = df.dropna()
+Task 2: Basic Data Analysis
+# Basic statistics
+print("\nDescriptive Statistics:\n", df.describe())
+
+# Group by species and compute mean of numerical columns
+grouped = df.groupby('species').mean()
+print("\nMean per Species:\n", grouped)
+
+# Insightful observation
+print("\nObservation: Iris-virginica has the highest average petal length and width.")
+Task 3: Data Visualization
+# Set theme
+sns.set(style="whitegrid")
+
+# Line chart (simulating a time-series by row index)
+plt.figure(figsize=(10, 5))
+plt.plot(df.index, df['sepal length (cm)'], label='Sepal Length')
+plt.plot(df.index, df['petal length (cm)'], label='Petal Length')
+plt.title('Sepal vs Petal Length Over Index')
+plt.xlabel('Index')
+plt.ylabel('Length (cm)')
+plt.legend()
+plt.show()
+
+# Bar chart: Average petal length per species
+plt.figure(figsize=(8, 5))
+sns.barplot(x='species', y='petal length (cm)', data=df, estimator=np.mean)
+plt.title('Average Petal Length per Species')
+plt.xlabel('Species')
+plt.ylabel('Average Petal Length (cm)')
+plt.show()
+
+# Histogram of sepal width
+plt.figure(figsize=(8, 5))
+sns.histplot(df['sepal width (cm)'], bins=20, kde=True)
+plt.title('Distribution of Sepal Width')
+plt.xlabel('Sepal Width (cm)')
+plt.ylabel('Frequency')
+plt.show()
+
+# Scatter plot: Sepal Length vs Petal Length
+plt.figure(figsize=(8, 5))
+sns.scatterplot(data=df, x='sepal length (cm)', y='petal length (cm)', hue='species')
+plt.title('Sepal Length vs Petal Length')
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Petal Length (cm)')
+plt.legend()
+plt.show()
+Summary of Findings:
+Iris-virginica shows the highest mean values for most flower parts.
+
+Petal length is a strong differentiator among species.
+
+Sepal width has a relatively normal distribution.
+
+The scatter plot suggests a positive correlation between sepal and petal length.
+
+Would you like a downloadable .ipynb notebook or Python script version of this code?
+
+
+
+
+
+
+
+
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info.
+?
